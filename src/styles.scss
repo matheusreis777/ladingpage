@@ -1,1 +1,17 @@
-/* You can add global styles to this file, and also import other style files */
+/* Carregar fonte Poppins do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  html, body {
+    margin: 0; // Remove margens
+    padding: 0; // Remove paddings
+    height: 100%; // Garante que ocupe 100% da altura da tela
+    width: 100%; // Garante que ocupe 100% da largura da tela
+    overflow: hidden; // Impede rolagem
+  }
