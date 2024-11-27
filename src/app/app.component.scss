@@ -1,0 +1,60 @@
+html, body {
+  height: 100%;
+  width: 100%;
+  overflow: hidden; // Garante que nada fique fora da tela
+}
+
+
+nav {
+    width: 100%;
+    border-bottom: 0.9 solid #b2b2b2;
+    margin: 0;
+    padding: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    background-color: transparent;
+}
+
+a {
+    cursor: pointer;
+    padding: 0px 10px 5px 10px;
+    font-size: 12px;
+    color: white
+}
+
+a:hover {
+    border-bottom: 2px solid orange;
+}
+
+.left {
+    align-items: end;
+}
+
+.row {
+    text-align: center;
+}
+
+// Gradiente de fundo para o body
+$gradient-background: linear-gradient(135deg, #6a11cb, #2575fc);
+
+body {
+  background: $gradient-background;
+  background-size: 400% 400%;
+  animation: gradient-animation 10s ease infinite;
+}
+
+// Animação para movimentar o gradiente
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
