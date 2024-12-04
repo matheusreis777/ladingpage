@@ -8,9 +8,9 @@ import { ContactComponent } from './contact/contact.component';
 export const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' }, // Redirecionar para Home
   { path: 'home', component: HomeComponent },
-  { path: 'app-area', component: AppAreaComponent },
-  { path: 'about', component: AboutComponent },
-  { path: 'contact', component: ContactComponent },
+  { path: 'projetos', component: AppAreaComponent },
+  { path: 'sobre', component: AboutComponent },
+  { path: 'contato', component: ContactComponent },
   { path: '**', redirectTo: 'home' }, // Rota padrão para rotas não encontradas
 ];
 

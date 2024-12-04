@@ -1,9 +1,10 @@
 <nav> 
   <div class="row"> 
-    <a routerLink="/home">Home</a>    
-    <a routerLink="/about">Sobre</a>
-    <a routerLink="/contact">Contatos</a>
-    <a routerLink="/app-area">Projetos</a>
+    <a (click)="navigateToHome()">Home</a>    
+    <a (click)="navigateToAbout()">Sobre</a>
+    <!-- //<a (click)="navigateToContact()">Contatos</a> -->
+    <a (click)="navigateToAppArea()">Projetos</a>
   </div>
 </nav>
+
 <router-outlet></router-outlet>
