@@ -1,0 +1,138 @@
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+  box-sizing: border-box;
+  overflow-y: auto !important;
+  scroll-behavior: smooth !important; 
+  background-color: #333;
+  text-align: justify;
+  opacity: 0; 
+  animation: fadeIn 0.5s ease-in-out forwards;
+  animation-delay: 0.5s;
+}
+
+h2, h3 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: orange;
+  margin-top: 38px;
+  opacity: 0;
+  animation: fadeIn 1.5s ease-in-out forwards;
+  animation-delay: 1s;
+}
+
+h3 {
+  color: orange;
+}
+
+p {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #FFFF;
+  max-width: 800px;
+  margin-bottom: 20px;
+  opacity: 0;
+  animation: fadeIn 1.6s ease-in-out forwards;
+  animation-delay: 1s;
+}
+
+ul {
+  padding: 0;
+  margin: 20px 0;
+  color: #FFFF;
+  opacity: 0;
+  animation: fadeIn 1s ease-in-out forwards;
+  animation-delay: 1s;
+}
+
+ul li {
+  font-size: 1rem;
+  line-height: 1.6;
+  opacity: 0; 
+  animation: fadeIn 2s ease-in-out forwards;
+  animation-delay: 1s;
+}
+
+strong {
+  color: orange;
+}
+.redes-sociais {
+  text-align: center;
+}
+
+.redes-sociais .container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.btn-icone {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  background-color: #007BFF;
+  border-radius: 50%;
+  color: white;
+  text-decoration: none;
+  font-size: 22px;
+  transition: background-color 0.3s ease;
+}
+
+.btn-icone:hover {
+  background-color: #0056b3;
+}
+
+.instagram {
+  background-color: #E4405F;
+}
+
+.instagram:hover {
+  background-color: #c13584;
+}
+
+.whatsapp {
+  background-color: #25D366;
+}
+
+.whatsapp:hover {
+  background-color: #128C7E;
+}
+
+.linkedin {
+  background-color: #0A66C2;
+}
+
+.linkedin:hover {
+  background-color: #004182;
+}
+@media (max-width: 768px) {
+  h2 {
+    font-size: 1.8rem;
+  }
+  p, li {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  h2 {
+    font-size: 1.6rem;
+  }
+  p, li {
+    font-size: 0.8rem;
+  }
+}

@@ -1,0 +1,128 @@
+* {
+    overflow: hidden; // Impede rolagem
+}
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+    box-sizing: border-box;
+    overflow-y: auto !important;
+    scroll-behavior: smooth !important;
+    background-color: #333;
+    text-align: justify;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: orange;
+    margin-top: 38px;
+    text-align: center;
+}
+
+.contato p {
+    font-size: 14px;
+    color: orange;
+    margin-bottom: 20px;
+}
+
+.contato-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    text-align: left;
+}
+
+.input-group label {
+    font-size: 14px;
+    color: orange;
+}
+
+.input-group input,
+.input-group textarea {
+    padding: 10px;
+    font-size: 12px;
+    border: 1px solid orange;
+    border-radius: 5px;
+    width: 100%;
+    background-color: transparent;
+    color: white
+}
+
+.input-group textarea {
+    resize: vertical;
+}
+
+.btn-submit {
+    font-size: 16px;
+    background-color: orange;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    height: 40px;
+}
+
+.btn-submit:hover {
+    background-color: rgb(193, 128, 7);
+}
+
+.redes-sociais {
+    text-align: center;
+}
+
+.redes-sociais .container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.btn-icone {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background-color: #007BFF;
+    border-radius: 50%;
+    color: white;
+    text-decoration: none;
+    font-size: 22px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-icone:hover {
+    background-color: #0056b3;
+}
+
+.instagram {
+    background-color: #E4405F;
+}
+
+.instagram:hover {
+    background-color: #c13584;
+}
+
+.whatsapp {
+    background-color: #25D366;
+}
+
+.whatsapp:hover {
+    background-color: #128C7E;
+}
+
+.linkedin {
+    background-color: #0A66C2;
+}
+
+.linkedin:hover {
+    background-color: #004182;
+}
