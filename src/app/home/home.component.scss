@@ -1,131 +1,59 @@
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-
-  100% {
-    opacity: 1;
-  }
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-section {
-  opacity: 0;
-  animation: fadeIn 1s ease-in-out forwards;
-  animation-delay: 1s;
-}
-
-.video-background {
+.image-background {
   position: relative;
   height: 100vh;
-  width: 100vw;
-  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
+.background-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('https://cdn.pixabay.com/photo/2015/01/08/18/25/desk-593327_1280.jpg');
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
 
-  .background-video {
+  &::after {
+    content: '';
     position: absolute;
     top: 0;
     left: 0;
-    width: 100vw;
-    height: 100vh;
-    object-fit: cover;
-    z-index: -1;
-    background-color: #1e1c1c;
-  }
-
-  .content {
-    position: relative;
-    z-index: 1;
-    color: white;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    width: 100%;
     height: 100%;
-
-    h2 {
-      font-size: 2rem;
-      text-align: center;
-      animation: fadeIn 1.5s ease-in-out forwards;
-      animation-delay: 1s;
-      opacity: 0;
-    }
-
-    p {
-      font-size: 1rem;
-      line-height: 1.5;
-      animation: fadeIn 1.6s ease-in-out forwards;
-      animation-delay: 1s;
-      opacity: 0;
-    }
-
-    div {
-      width: 100%;
-      max-width: 550px;
-      margin: 0 auto;
-      padding: 1rem;
-    }
-
-    @media (max-width: 768px) {
-      h2 {
-        font-size: 1.5rem;
-      }
-
-      p {
-        font-size: 0.875rem;
-      }
-
-      div {
-        width: 90%;
-        max-width: 100%;
-      }
-    }
-
-    @media (max-width: 480px) {
-      h2 {
-        font-size: 1.25rem;
-      }
-
-      p {
-        font-size: 0.75rem;
-      }
-    }
+    background: rgba(0, 0, 0, 0.7); // Tornando a sobreposição mais opaca
+    z-index: 1;                     
   }
+}
 
-  .whatsapp-btn {
-    margin-top: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #25d366;
-    color: white;
-    border: none;
-    border-radius: 30px;
-    padding: 12px 20px;
-    font-size: 1rem;
-    cursor: pointer;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    transition: background-color 0.3s ease;
-    text-decoration: none;
-    animation: fadeIn 1.5s ease-in-out forwards;
-    animation-delay: 0.1s;
-    opacity: 0;
+.content {
+  position: relative;
+  text-align: center;
+  color: #fff;
+  z-index: 1;
+}
 
-    img {
-      width: 25px;
-      height: 25px;
-      margin-right: 10px;
-    }
+.whatsapp-btn {
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+  color: #fff;
+  background-color: #25d366;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: bold;
+}
 
-    &:hover {
-      background-color: #128c7e;
-    }
-  }
+.whatsapp-btn img {
+  width: 24px;
+  height: 24px;
+  margin-right: 8px;
+}
 
+.whatsapp-btn:hover {
+  background-color: #1da851;
 }
